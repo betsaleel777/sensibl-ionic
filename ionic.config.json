@@ -1,0 +1,7 @@
+{
+  "name": "sensibl",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "custom"
+}
