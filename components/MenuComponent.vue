@@ -66,14 +66,11 @@ const handleThemeChange = (event: any) => {
         </ion-item>
       </ion-list>
     </ion-content>
-    <ion-toast :is-open="isOpen" :message="message" :duration="5000"></ion-toast>
+    <ion-toast :is-open="isOpen" :message="message" :duration="5000" @didDismiss="isOpen = false"></ion-toast>
   </ion-menu>
 </template>
 
 <style scoped>
-ion-title {
-  --width: 100%;
-}
 ion-menu {
   --width: 70%;
 }

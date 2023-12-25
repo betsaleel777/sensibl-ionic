@@ -1,6 +1,6 @@
 <template>
   <ion-app>
-    <ion-router-outlet />
+    <MenuComponent />
+    <ion-router-outlet id="main-content" />
   </ion-app>
 </template>
-<style scoped></style>

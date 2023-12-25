@@ -2,7 +2,7 @@
   <LayoutComponent>
     <ion-card>
       <ion-list inset="true" color="light" lines="none">
-        <ion-item @click="runRule(rule)" v-for="(rule, key) in rules" :key="key" :button="true">
+        <ion-item :router-link="`/detail/${rule}`" v-for="(rule, key) in rules" :key="key" :button="true">
           <ion-badge type="warning" slot="start">{{ rule }}</ion-badge>
           <ion-label> règle numéro {{ rule }} </ion-label>
         </ion-item>
@@ -13,11 +13,9 @@
 
 <script setup>
 definePageMeta({
-  alias: ["/"],
+  alias: ["/index", "/"],
 });
-const router = useIonRouter();
 const rules = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-const runRule = (rule) => router.push(`/detail/${rule}`);
 </script>
 
 <style scoped></style>

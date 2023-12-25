@@ -6,7 +6,7 @@
     <ion-card class="carte">
       <ion-card-content class="card-content">
         <p>
-          <ion-text class="ion-text-justify">
+          <ion-text class="ion-text-justify rule-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
             nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
@@ -16,22 +16,56 @@
         </p>
       </ion-card-content>
     </ion-card>
+    <div :class="classPagination">
+      <ion-button :router-link="`/detail/${rule - 1}`" fill="clear" v-if="rule !== 1">
+        <ion-icon slot="start" :icon="ioniconsCaretBack"></ion-icon>
+        prec
+      </ion-button>
+      <ion-button :router-link="`/detail/${rule + 1}`" fill="clear" v-if="rule !== 10">
+        <ion-icon slot="end" :icon="ioniconsCaretForward"></ion-icon>
+        suiv
+      </ion-button>
+    </div>
   </LayoutComponent>
 </template>
 
 <script setup>
 import { useRoute } from "vue-router";
-const rule = useRoute().params.rule;
+const rule = Number(useRoute().params.rule);
+const classPagination = computed(() => {
+  if (rule === 10) return { "pagination-start": true };
+  else if (rule === 1) return { "pagination-end": true };
+  else return { "pagination-middle": true };
+});
 </script>
 
 <style scoped>
 .carte {
   margin-top: 5px;
+  margin-bottom: 0px;
 }
 .carte-content {
   padding: 10px;
 }
 .titre {
   margin-bottom: 0px;
+}
+.pagination-middle {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 5px;
+}
+.pagination-start {
+  display: flex;
+  justify-content: start;
+  padding-inline: 5px;
+}
+.pagination-end {
+  display: flex;
+  justify-content: end;
+  padding-inline: 5px;
+}
+.rule-text {
+  font-size: medium;
 }
 </style>
