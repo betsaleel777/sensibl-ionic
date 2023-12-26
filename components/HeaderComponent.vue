@@ -1,10 +1,12 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+const showHomeButton = computed(() => useRouter().currentRoute.value.path !== "/");
+</script>
 
 <template>
-  <ion-header>
+  <ion-header :translucent="true">
     <ion-toolbar>
       <ion-buttons slot="start">
-        <ion-button size="small" router-link="/" fill="clear">
+        <ion-button v-if="showHomeButton" size="small" router-link="/" fill="clear">
           <ion-icon slot="start" :icon="ioniconsHome"></ion-icon>
         </ion-button>
       </ion-buttons>

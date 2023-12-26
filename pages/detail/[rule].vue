@@ -1,9 +1,9 @@
 <template>
   <LayoutComponent>
     <div class="ion-text-center titre">
-      <ion-label> c'est la page de la règle {{ rule }} </ion-label>
+      <ion-label color="warning"> c'est la page de la règle {{ rule }} </ion-label>
     </div>
-    <ion-card class="carte">
+    <ion-card color="secondary" class="carte">
       <ion-card-content class="card-content">
         <p>
           <ion-text class="ion-text-justify rule-text">
@@ -17,12 +17,12 @@
       </ion-card-content>
     </ion-card>
     <div :class="classPagination">
-      <ion-button :router-link="`/detail/${rule - 1}`" fill="clear" v-if="rule !== 1">
-        <ion-icon slot="start" :icon="ioniconsCaretBack"></ion-icon>
+      <ion-button color="warning" :router-link="`/detail/${rule - 1}`" fill="clear" v-if="rule !== 1">
+        <ion-icon color="warning" slot="start" :icon="ioniconsCaretBack"></ion-icon>
         prec
       </ion-button>
-      <ion-button :router-link="`/detail/${rule + 1}`" fill="clear" v-if="rule !== 10">
-        <ion-icon slot="end" :icon="ioniconsCaretForward"></ion-icon>
+      <ion-button color="warning" :router-link="`/detail/${rule + 1}`" fill="clear" v-if="rule !== 10">
+        <ion-icon color="warning" slot="end" :icon="ioniconsCaretForward"></ion-icon>
         suiv
       </ion-button>
     </div>
@@ -30,8 +30,7 @@
 </template>
 
 <script setup>
-import { useRoute } from "vue-router";
-const rule = Number(useRoute().params.rule);
+const rule = Number(useRouter().currentRoute.value.params.rule);
 const classPagination = computed(() => {
   if (rule === 10) return { "pagination-start": true };
   else if (rule === 1) return { "pagination-end": true };

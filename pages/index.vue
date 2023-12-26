@@ -1,9 +1,9 @@
 <template>
   <LayoutComponent>
     <ion-card>
-      <ion-list inset="true" color="light" lines="none">
+      <ion-list inset="true" lines="none">
         <ion-item :router-link="`/detail/${rule}`" v-for="(rule, key) in rules" :key="key" :button="true">
-          <ion-badge type="warning" slot="start">{{ rule }}</ion-badge>
+          <ion-badge color="primary" slot="start">{{ rule }}</ion-badge>
           <ion-label> règle numéro {{ rule }} </ion-label>
         </ion-item>
       </ion-list>
