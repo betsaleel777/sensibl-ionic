@@ -1,0 +1,132 @@
+[
+    {
+        "id": 1,
+        "texte": "la lutte contre la déforestation",
+        "icon": "plante",
+        "content": "Promouvoir la lutte contre la déforestation lors d'une compétition sportive est une excellente idée pour sensibiliser les jeunes à cette problématique. La compétition sportive devient une plateforme pour promouvoir la sensibilisation et l'action en faveur de la préservation des forêts, permettant aux jeunes de comprendre leur rôle dans la lutte contre la déforestation.",
+        "rules": [
+            {
+                "id": 1,
+                "title": "la Côte d’Ivoire n’est plus un pays forestier",
+                "content": "la Côte d’ivoire a perdu plus 80% de son couvert forestier depuis les indépendances à ce jour, passant de 16 millions d’ha en 1960 à moins de 3 millions d’ha aujourd’hui, une des dégradations les plus rapides au monde. Le reboisement devient une urgence nationale et il faut s’y engager !!!"
+            },
+            {
+                "id": 2,
+                "title": "le rôle crucial des forêts dans l’adaptation au changement climatique",
+                "content": "Soulignez le rôle essentiel des forêts dans la régulation du climat. Les arbres absorbent le dioxyde de carbone (CO2) de l'atmosphère et libèrent de l'oxygène, contribuant ainsi à atténuer les changements climatiques."
+            },
+            {
+                "id": 3,
+                "title": "les menaces sur la biodiversité menacée et les conséquences sur les communautés",
+                "content": "Expliquez aux jeunes que la déforestation entraîne la perte de biodiversité, car de nombreuses espèces dépendent des forêts pour leur habitat. La disparition des forêts met en danger la survie de nombreuses plantes et animaux. Montrez-leur comment la déforestation impacte négativement les communautés autochtones qui dépendent des forêts pour leur mode de vie, leur culture et leurs ressources. Informez-les sur le lien entre la déforestation et l'érosion des sols. Les arbres jouent un rôle clé dans la stabilisation du sol, et sans eux, les risques d'inondations, de glissements de terrain et de dégradation des terres augmentent. Sensibilisez-les aux conséquences de la déforestation sur les ressources en eau douce. Les forêts agissent comme des régulateurs naturels, contribuant à maintenir l'équilibre hydrique dans les écosystèmes."
+            },
+            {
+                "id": 4,
+                "title": "Promouvoir la réduction de la production de papier et de bois et aider à lutter contre la commerce illégal du bois",
+                "content": "Expliquez la relation entre la déforestation et la production de papier et de bois. Encouragez les jeunes à faire des choix éclairés en optant pour des produits certifiés ou en privilégiant des alternatives durables. Informez-les sur le commerce illégal du bois et ses liens avec la déforestation. Encouragez-les à soutenir des initiatives visant à lutter contre le trafic illégal de bois. Encouragez les jeunes à partager leurs connaissances, à sensibiliser leur entourage et à participer à des projets éducatifs axés sur la protection des forêts."
+            },
+            {
+                "id": 5,
+                "title": "S’engager pour la reforestation",
+                "content": "Mettez en avant l'importance de la reforestation pour restaurer les zones déboisées. Encouragez les jeunes à participer à des opérations de planting organisées par le Abidjan Legacy Programme (ALP) partenaire du programme de bénévoles à soutenir/participer les initiatives de reboisement communautaire."
+            },
+            {
+                "id": 6,
+                "title": "Réduire l’utilisation du bois de chauffe et du charbon dans les pratiques domestiques y compris pendant la CAN",
+                "content": "Favorisez l'utilisation des énergies renouvelables et autres gaz pour les besoins domestqiues."
+            },
+            {
+                "id": 7,
+                "title": "Zone de reboisement",
+                "content": "Créez des zones spéciales dédiée à la sensibilisation à la lutte contre la déforestation. Les participants pourraient planter des arbres ou contribuer à des projets de reforestation en lien avec l'événement."
+            },
+            {
+                "id": 8,
+                "title": "Promouvoir la protection des aires protégées",
+                "content": "le pays dispose de plusieurs parcs nationaux, réserves et forêts classées qui contribuent à préserver la forêt. Rappeler que la protection de ces aires contribue à préserver la biodiversité et à conserver le couvert forestier national."
+            },
+            {
+                "id": 9,
+                "title": "Promouvoir la communication sans papier",
+                "content": "Favorisez la communication électronique plutôt que les supports papier pour les annonces, les programmes et les résultats de l'événement, réduisant ainsi la demande de papier issu de la déforestation."
+            },
+            {
+                "id": 10,
+                "title": "S’engager avec la communauté pour la promotion de la reforestation même après la CAN",
+                "content": "Encouragez les participants à s'engager dans des projets communautaires de préservation des forêts après la compétition. Cela pourrait inclure des activités de sensibilisation, de reforestation ou de participation à des initiatives locales de conservation des écosystèmes forestiers."
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "texte": "la lutte contre le terrorisme",
+        "icon": "terrorisme",
+        "content": "La promotion de la lutte contre le terrorisme lors d'une compétition sportive peut être une approche innovante pour sensibiliser les jeunes à cette problématique. La compétition sportive devient une plateforme non seulement pour l'excellence athlétique mais aussi pour la promotion des valeurs de paix, de tolérance et d'inclusion, aidant ainsi à sensibiliser les jeunes et à renforcer leur engagement dans la lutte contre le terrorisme.",
+        "rules": [
+            {
+                "id": 1,
+                "title": "Lutter contre la pauvreté, prévenir les conflits: atténuer les causes du terrorisme",
+                "content": "Expliquez aux jeunes les multiples causes du terrorisme, telles que la pauvreté, la marginalisation, les conflits communautaires et religieux, et encouragez-les à approfondir leur compréhension de ces problèmes pour mieux les résoudre."
+            },
+            {
+                "id": 2,
+                "title": "Promouvoir la tolérance et de la gestion pacifique des conflits",
+                "content": "Insistez sur l'importance de la tolérance et du respect envers les différences culturelles, religieuses et ethniques. Encouragez les jeunes à s'engager dans la gestion pacifique des conflits ainsi que toute activité qui favorise la compréhension mutuelle."
+            },
+            {
+                "id": 3,
+                "title": "Attention aux manipulations et recrutement de jeunes sur l’internet",
+                "content": "Informez-les sur les tactiques de recrutement en ligne utilisées par les groupes d’extrémisme violent et terroristes. Encouragez la vigilance et la sensibilisation aux dangers des discours extrémistes sur Internet."
+            },
+            {
+                "id": 4,
+                "title": "Respect des droits de l'homme",
+                "content": "Mettez en avant l'importance du respect des droits de l'homme dans la prévention du terrorisme. Les jeunes doivent comprendre que le recours à la violence va à l'encontre des principes fondamentaux de la dignité humaine. Ils doivent apprendre à échanger sur leurs croyances et apprendre à respecter les convictions d'autrui."
+            },
+            {
+                "id": 5,
+                "title": "S’engager dans des activités citoyennes et dans des projets positifs",
+                "content": "Encouragez les jeunes à s'impliquer dans des projets positifs qui renforcent la communauté, promeuvent la paix et fournissent des alternatives constructives aux influences négatives. Encouragez les jeunes à développer des compétences qui les aident à contribuer positivement à la société et à s'impliquer dans leur communauté en tant que citoyens responsables. La participation active peut aider à prévenir l'aliénation et le désir de recourir à la violence comme moyen de résolution des conflits."
+            },
+            {
+                "id": 6,
+                "title": "Agir en faiseurs de paix et en pacifiste même dans des situations de tensions-conflits",
+                "content": "utiliser soi-même la non-violence pour régler les potentielles tensions que peuvent générer ce genre de rassemblement. Recourir aux symboles de paix et d'unité dans l'événement, tels que des rubans colorés ou des messages de paix, pour rappeler aux participants l'importance de la solidarité, de l'esprit sportif et du fair-play."
+            },
+            {
+                "id": 7,
+                "title": "S’engager dans des activités communautaire",
+                "content": "Encouragez les jeunes à s'impliquer dans des projets communautaires de prévention du terrorisme même après la compétition. Cela pourrait inclure des actions de sensibilisation et d'éducation dans leur communauté."
+            },
+            {
+                "id": 8,
+                "title": "Se former à être résilient et à ne pas succomber aux tentations",
+                "content": "Offrez des ateliers de formation à la résilience pour aider les jeunes à faire face aux défis de la vie et à développer des compétences qui les rendent moins vulnérables à l'influence de l'extrémisme violent."
+            },
+            {
+                "id": 9,
+                "title": "Continuer la sensibilisation autour de soi même après la compétition",
+                "content": "Planifiez des campagnes de sensibilisation continues après l'événement, utilisant les médias sociaux et d'autres canaux pour maintenir l'engagement des jeunes dans la lutte contre le terrorisme."
+            },
+            {
+                "id": 10,
+                "title": "Se soutenir et rechercher du soutien psychologique",
+                "content": "Soulignez l'importance du soutien psychologique pour ceux qui pourraient être vulnérables à la radicalisation, notamment par les pairs. Encouragez l'ouverture sur les problèmes mentaux et la recherche d'aide professionnelle lorsque nécessaire."
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "texte": "la lutte contre la pollution plastique",
+        "icon": "biohazard",
+        "content": "",
+        "rules": []
+    },
+    {
+        "id": 4,
+        "texte": "la lutte contre les violences basées sur le genre (VBG)",
+        "icon": "genre",
+        "content": "",
+        "rules": []
+    }
+]

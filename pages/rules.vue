@@ -1,17 +1,14 @@
 <template>
   <LayoutComponent>
-    <ion-content :fullscreen="true" class="ion-padding" color="light">
-      <RuleComponent :rule="rule" />
+    <ion-content :fullscreen="true" color="light">
+      <RuleListComponent :rules="thematique.rules" />
     </ion-content>
   </LayoutComponent>
 </template>
 
 <script lang="ts" setup>
 import type { Thematique } from "~/types/global";
-
-const id = Number(useRouter().currentRoute.value.params.rule);
 const thematique = useState<Thematique>("thematique");
-const rule = thematique.value.rules.filter((rule) => rule.id === id).at(0);
 </script>
 
 <style scoped></style>

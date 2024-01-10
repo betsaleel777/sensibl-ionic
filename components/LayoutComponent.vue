@@ -3,9 +3,7 @@
 <template>
   <ion-page id="main-content">
     <HeaderComponent />
-    <ion-content :fullscreen="true" class="ion-padding" color="primary">
-      <slot />
-    </ion-content>
+    <slot />
   </ion-page>
 </template>
 
