@@ -1,19 +1,19 @@
 <script lang="ts" setup>
 import type { Thematique } from "~/types/global";
-import { skullOutline, earthOutline, leafOutline, maleFemaleOutline } from "ionicons/icons";
+import { skull, earth, leaf, maleFemale } from "ionicons/icons";
 const props = defineProps<{ thematique: Thematique }>();
 const icons = reactive<any>({
-  terrorisme: skullOutline,
-  plante: leafOutline,
-  biohazard: earthOutline,
-  genre: maleFemaleOutline,
+  terrorisme: skull,
+  plante: leaf,
+  biohazard: earth,
+  genre: maleFemale,
 });
 </script>
 
 <template>
   <ion-card>
     <ion-card-content class="ion-no-padding">
-      <ion-item :router-link="`/thematique/${props.thematique.id}`" lines="none" :button="true">
+      <ion-item :router-link="`/thematique/${props.thematique.id}`" lines="none" button :detail="false">
         <ion-icon color="warning" slot="start" size="large" :icon="icons[thematique.icon]"></ion-icon>
         <ion-label>
           <ion-text>
@@ -25,10 +25,4 @@ const icons = reactive<any>({
   </ion-card>
 </template>
 
-<style scoped>
-ion-card {
-  border-style: solid;
-  border-width: 2px;
-  border-color: green;
-}
-</style>
+<style scoped></style>

@@ -8,7 +8,14 @@ interface Thematique {
     texte: string;
     icon: string;
     content: string;
+    image: string;
     rules: Array<Rule>
 }
+interface HarcelementRule {
+    id: number,
+    title: string;
+    content: string;
+    composant: string
+}
 
-export type { Thematique, Rule }
+export type { Thematique, Rule, HarcelementRule }

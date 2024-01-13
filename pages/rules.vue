@@ -1,14 +1,17 @@
 <template>
   <LayoutComponent>
-    <ion-content :fullscreen="true" color="light">
+    <ion-content :fullscreen="true">
       <RuleListComponent :rules="thematique.rules" />
     </ion-content>
   </LayoutComponent>
 </template>
 
 <script lang="ts" setup>
-import type { Thematique } from "~/types/global";
-const thematique = useState<Thematique>("thematique");
+const thematique = useThematique();
 </script>
 
-<style scoped></style>
+<style scoped>
+ion-content {
+  --background: var(--ion-color-light) url("/images/sprite1.png") no-repeat center center / cover;
+}
+</style>

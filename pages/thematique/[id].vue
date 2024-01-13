@@ -7,11 +7,10 @@
 </template>
 
 <script lang="ts" setup>
-import type { Thematique } from "~/types/global";
 const id = Number(useRouter().currentRoute.value.params.id);
-const thematiques = useState<Thematique[]>("thematiques");
-const thematique = thematiques.value.filter((thematique) => thematique.id === id).at(0);
-useState("thematique", () => thematique);
+const thematiques = useThematiques();
+const thematique = useThematique();
+thematique.value = thematiques.value.find((thematique) => thematique.id === id)!;
 </script>
 
 <style scoped></style>
