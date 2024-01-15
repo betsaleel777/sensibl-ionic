@@ -1,15 +1,27 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { App } from "@capacitor/app";
+const ionRouter = useIonRouter();
+useBackButton(-1, () => {
+  if (!ionRouter.canGoBack()) {
+    App.exitApp();
+  }
+});
+</script>
 
 <template>
   <ion-header :translucent="true">
     <ion-toolbar>
       <ion-buttons slot="start">
-        <!-- <ion-button v-if="showHomeButton" size="small" router-link="/" fill="clear">
-          <ion-icon slot="start" :icon="ioniconsHome"></ion-icon>
-        </ion-button> -->
-        <ion-back-button></ion-back-button>
+        <ion-back-button
+          v-if="isPlatform('android')"
+          text=""
+          color="warning"
+          :icon="ioniconsArrowBack"
+          @click="getNavigation"
+        ></ion-back-button>
+        <ion-back-button v-else text="" color="warning"></ion-back-button>
       </ion-buttons>
-      <ion-title>Sensibl can2024</ion-title>
+      <ion-title color="warning">Benevol-can2023</ion-title>
     </ion-toolbar>
   </ion-header>
 </template>
