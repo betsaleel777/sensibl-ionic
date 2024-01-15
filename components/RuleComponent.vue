@@ -86,12 +86,12 @@ ion-card {
 }
 .pagination-start {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   padding-inline: 5px;
 }
 .pagination-end {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   padding-inline: 5px;
 }
 .rule-text {
