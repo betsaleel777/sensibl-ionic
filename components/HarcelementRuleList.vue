@@ -1,13 +1,10 @@
 <script lang="ts" setup>
 import type { HarcelementRule } from "~/types/global";
-
-const { data: harcelements } = await useFetch<HarcelementRule[]>("/json/harcelements.json");
-const rules = useHarcelements();
-rules.value = harcelements.value!;
+const props = defineProps<{ rules: HarcelementRule[] }>();
 </script>
 
 <template>
-  <ion-card v-for="rule in rules">
+  <ion-card v-for="rule in props.rules">
     <ion-card-content class="ion-no-padding">
       <ion-item
         :router-link="`/harcelement/${rule.id}`"

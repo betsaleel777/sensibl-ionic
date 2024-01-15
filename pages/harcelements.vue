@@ -1,12 +1,18 @@
 <template>
   <LayoutComponent>
     <ion-content :fullscreen="true">
-      <HarcelementRuleList />
+      <HarcelementRuleList :rules="rules" />
     </ion-content>
   </LayoutComponent>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import type { HarcelementRule } from "~/types/global";
+
+const { data: harcelements } = await useFetch<HarcelementRule[]>("/json/harcelements.json");
+const rules = useHarcelements();
+rules.value = harcelements.value!;
+</script>
 
 <style scoped>
 ion-content {

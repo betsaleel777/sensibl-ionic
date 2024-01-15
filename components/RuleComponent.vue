@@ -1,7 +1,6 @@
 <script lang="ts" setup>
 import type { Rule } from "~/types/global";
 
-const imgLoading = ref(true);
 const props = defineProps<{ rule: Rule }>();
 const classPagination = computed(() => {
   if (props.rule.id === 10) return { "pagination-start": true };
