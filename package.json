@@ -1,5 +1,4 @@
 {
-  "name": "benevolcan2023",
   "private": true,
   "type": "module",
   "scripts": {
@@ -8,10 +7,11 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "ionic:build": "npm run generate",
+    "ionic:build": "npm run build",
     "ionic:serve": "npm run dev"
   },
   "devDependencies": {
+    "@capacitor/assets": "^3.0.4",
     "@nuxt/devtools": "latest",
     "@nuxtjs/ionic": "^0.12.1",
     "nuxt": "^3.8.2",

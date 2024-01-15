@@ -46,7 +46,7 @@ const thematique = useThematique();
     </ion-button>
   </div>
   <div class="thematique-image">
-    <ion-img @ion-img-did-load="imgLoading = false" :src="thematique.image"></ion-img>
+    <ion-img :src="thematique.image"></ion-img>
   </div>
 </template>
 
